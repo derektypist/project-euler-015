@@ -19,9 +19,30 @@
     <!-- Set Up Instructions -->
     <section class="container-fluid instructions">
         <p>Starting in the top left corner of a 2x2 grid, and only being able to move to the right and down, there are exactly 6 routes to the bottom right corner.</p>
-        <p>Enter grid size (e.g. 4) to find the number of such routes.</p>
+        <p>Find the number of such routes, by entering various grid sizes as a whole number (e.g. 4, 9).</p>
     </section>
 
     <!-- Set Up Form -->
+    <section class="container-fluid">
+        <form>
+            <!-- Set Up Label and Input -->
+            <article class="mb-3">
+                <label for="mynumber" class="form-label">Number (Required)</label>
+                <input class="form-control" placeholder="Enter whole number between 1 and 30 (e.g. 4)" title="Enter whole number between 1 and 30 (e.g. 4)" id="mynumber">
+            </article>
+
+            <!-- Set Up and Center Buttons -->
+            <article class="d-grid gap-2 d-flex justify-content-center">
+                <button type="button" onclick="getNumberInfo()" class="btn btn-info">Submit</button>
+                <button type="reset" onclick="clearInfo()" class="btn btn-warning">Reset</button>
+            </article>
+        </form>
+
+        <!-- Display Number Information -->
+        <p id="numinfo"></p>
+
+        <!-- Load Script -->
+        <script src="js/script.js"></script>
+    </section>
 </body>
 </html>
