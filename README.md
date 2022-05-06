@@ -4,9 +4,22 @@ Starting in the top left corner of a 2x2 grid, and only being able to move to th
 
 The aim is to find the number of such routes through a given gridsize (e.g. 20x20), using HTML Forms and JavaScript.
 
+Information at [Project Euler 015](https://projecteuler.net/problem=15)
+
 ## UX
 
+**Getting Started**
+
+Enter a whole number between 1 and 30 in the input field and click on the Submit Button.  You will see the number (grid size) you have entered as well as the number of routes, unless you have made an invalid input.  For example, if you entered 4, you would expect to get 70 routes.  Click on the Reset Button to clear this information or to start again.
+
 **User Stories**
+
+As a user, I expect to get an error message, if I do any of:
+
+* Not enter anything in the input field
+* Entering text other than a number
+* Entering a number less than 1 or greater than 30
+* Entering a number, but it is not an integer
 
 As a user, I expect the function `latticePaths(4)` to return a number.
 
@@ -15,4 +28,8 @@ As a user, I expect the function `latticePaths(4)` to return 70.
 As a user, I expect the function `latticePaths(9)` to return 48620.
 
 As a user, I expect the function `latticePaths(20)` to return 137846528820.
+
+**Information Architecture**
+
+The function `latticePaths(gridSize)` returns a number (integer), where `gridSize` is the size of the grid (number between 1 and 30).
 
