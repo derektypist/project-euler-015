@@ -26,7 +26,7 @@ function getNumberInfo() {
 function latticePaths(gridSize) {
     gridSize = gridSize * 2;
     let k = gridSize/2;
-    return Math.floor(factorial(gridSize))/(factorial(k)*(factorial(gridSize-k)));
+    return (factorial(gridSize))/(factorial(k)*(factorial(gridSize-k)));
 }
 
 /*
