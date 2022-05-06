@@ -16,10 +16,10 @@ Enter a whole number between 1 and 30 in the input field and click on the Submit
 
 As a user, I expect to get an error message, if I do any of:
 
-* Not enter anything in the input field
-* Entering text other than a number
-* Entering a number less than 1 or greater than 30
-* Entering a number, but it is not an integer
+- Not enter anything in the input field
+- Entering text other than a number
+- Entering a number less than 1 or greater than 30
+- Entering a number, but it is not an integer
 
 As a user, I expect the function `latticePaths(4)` to return a number.
 
@@ -33,3 +33,29 @@ As a user, I expect the function `latticePaths(20)` to return 137846528820.
 
 The function `latticePaths(gridSize)` returns a number (integer), where `gridSize` is the size of the grid (number between 1 and 30).
 
+## Features
+
+Allows the user to enter a number (grid size) as well as getting the number of routes from the top left corner to the bottom right corner.  Performs checks on valid user input.  If the input is not valid, an error message is displayed.
+
+## Technologies
+
+Uses HTML5, CSS3, JavaScript, Bootstrap 5.1.3 and Google Fonts.
+
+## Testing
+
+Ensure all user stories have been met.
+
+## Deployment
+
+Deployed on [GitHub Pages](https://derektypist.github.io/project-euler-015) at the main branch.
+
+## Credits
+
+### Content
+
+Written by me.
+
+### Acknowledgements
+
+- [Project Euler](https://projecteuler.net)
+- [FreeCodeCamp](https://www.freecodecamp.org)
